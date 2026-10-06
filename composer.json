@@ -1,0 +1,35 @@
+{
+  "name": "gazelle/gazelle-blocks",
+  "description": "Precision-engineered, performance-first Gutenberg blocks.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Joao Victor Angeline"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.11",
+    "szepeviktor/phpstan-wordpress": "^1.3",
+    "wp-coding-standards/wpcs": "^3.1",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "GazelleBlocks\\": "includes/"
+    }
+  },
+  "scripts": {
+    "lint": "phpcs",
+    "format": "phpcbf",
+    "analyze": "phpstan analyse --memory-limit=512M"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

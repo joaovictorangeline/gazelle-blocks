@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build artifacts
+build/
+*.zip
+
+# Logs and environment
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Testing artifacts
+.phpunit.result.cache

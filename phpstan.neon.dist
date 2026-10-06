@@ -1,0 +1,9 @@
+parameters:
+    level: 8
+    paths:
+        - gazelle-blocks.php
+        - includes/
+    excludePaths:
+        - vendor/
+        - node_modules/
+        - build/
