@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Gazelle Blocks
  * Plugin URI:        https://github.com/your-username/gazelle-blocks
- * Description:       Precision-engineered, performance-first Gutenberg blocks inspired by Apple's minimalist aesthetic.
+ * Description:       Precision-engineered, performance-first Gutenberg blocks.
  * Version:           0.1.0
  * Requires at least: 6.4
  * Requires PHP:      8.0
@@ -30,6 +30,9 @@ if ( file_exists( GAZELLE_BLOCKS_PATH . 'vendor/autoload.php' ) ) {
 	require_once GAZELLE_BLOCKS_PATH . 'vendor/autoload.php';
 }
 
-add_action( 'plugins_loaded', static function (): void {
-	Plugin::get_instance()->boot();
-} );
+add_action(
+	'plugins_loaded',
+	static function (): void {
+		Plugin::get_instance()->boot();
+	}
+);
