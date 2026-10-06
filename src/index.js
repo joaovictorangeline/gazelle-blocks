@@ -1,0 +1,1 @@
+console.log( 'Gazelle Blocks initialized' );
